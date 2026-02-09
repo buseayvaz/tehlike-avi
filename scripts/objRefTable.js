@@ -19,9 +19,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.AddVar,
 		C3.Plugins.Text.Acts.SetText,
 		C3.Plugins.Text.Acts.SetFontSize,
-		C3.Plugins.Text.Acts.SetFontColor,
-		C3.Plugins.Touch.Cnds.OnTapGestureObject,
-		C3.Plugins.Browser.Acts.RequestFullScreen
+		C3.Plugins.Text.Acts.SetFontColor
 	];
 };
 self.C3_JsPropNameTable = [
@@ -29,11 +27,12 @@ self.C3_JsPropNameTable = [
 	{IsMarked: 0},
 	{Değişken1: 0},
 	{Target: 0},
-	{Marked: 0},
 	{Dokun: 0},
 	{ScoreText: 0},
 	{Tarayıcı: 0},
-	{fullscreen: 0},
+	{Sprite: 0},
+	{Marked: 0},
+	{Sprite2: 0},
 	{IsDragging: 0},
 	{DeltaX: 0},
 	{DeltaY: 0},
@@ -46,9 +45,10 @@ self.C3_JsPropNameTable = [
 self.InstanceType = {
 	Map: class extends self.ISpriteInstance {},
 	Target: class extends self.ISpriteInstance {},
-	Marked: class extends self.ISpriteInstance {},
 	Dokun: class extends self.IInstance {},
 	ScoreText: class extends self.ITextInstance {},
 	Tarayıcı: class extends self.IInstance {},
-	fullscreen: class extends self.ISpriteInstance {}
+	Sprite: class extends self.ISpriteInstance {},
+	Marked: class extends self.ISpriteInstance {},
+	Sprite2: class extends self.ISpriteInstance {}
 }
