@@ -19,7 +19,10 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.AddVar,
 		C3.Plugins.Text.Acts.SetText,
 		C3.Plugins.Text.Acts.SetFontSize,
-		C3.Plugins.Text.Acts.SetFontColor
+		C3.Plugins.Text.Acts.SetFontColor,
+		C3.Plugins.System.Cnds.Every,
+		C3.Plugins.System.Acts.GoToLayout,
+		C3.Plugins.Touch.Cnds.IsTouchingObject
 	];
 };
 self.C3_JsPropNameTable = [
@@ -33,13 +36,24 @@ self.C3_JsPropNameTable = [
 	{Sprite: 0},
 	{Marked: 0},
 	{Sprite2: 0},
+	{Sprite3: 0},
+	{Sprite4: 0},
+	{BaslaTarget: 0},
 	{IsDragging: 0},
 	{DeltaX: 0},
 	{DeltaY: 0},
 	{TouchLastX: 0},
 	{TouchLastY: 0},
 	{Puan: 0},
-	{Score: 0}
+	{Score: 0},
+	{IsDragging2: 0},
+	{DeltaX2: 0},
+	{DeltaY2: 0},
+	{Marked2: 0},
+	{TouchLastX2: 0},
+	{TouchLastY2: 0},
+	{Puan2: 0},
+	{Score2: 0}
 ];
 
 self.InstanceType = {
@@ -50,5 +64,8 @@ self.InstanceType = {
 	Tarayıcı: class extends self.IInstance {},
 	Sprite: class extends self.ISpriteInstance {},
 	Marked: class extends self.ISpriteInstance {},
-	Sprite2: class extends self.ISpriteInstance {}
+	Sprite2: class extends self.ISpriteInstance {},
+	Sprite3: class extends self.ISpriteInstance {},
+	Sprite4: class extends self.ISpriteInstance {},
+	BaslaTarget: class extends self.ISpriteInstance {}
 }
