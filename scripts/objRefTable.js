@@ -24,7 +24,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Text.Acts.SetFontColor,
 		C3.Plugins.System.Cnds.Every,
 		C3.Plugins.System.Acts.GoToLayout,
-		C3.Plugins.Touch.Cnds.IsTouchingObject
+		C3.Plugins.Touch.Cnds.IsTouchingObject,
+		C3.Plugins.System.Acts.GoToLayoutByName
 	];
 };
 self.C3_JsPropNameTable = [
@@ -41,7 +42,6 @@ self.C3_JsPropNameTable = [
 	{Sprite3: 0},
 	{BaslaTarget: 0},
 	{Sprite5: 0},
-	{Sprite4: 0},
 	{Ses: 0},
 	{Sprite6: 0},
 	{Sprite7: 0},
@@ -50,8 +50,12 @@ self.C3_JsPropNameTable = [
 	{Sprite12: 0},
 	{Sprite13: 0},
 	{Sprite10: 0},
-	{BaslaTarget2: 0},
+	{yonergegit: 0},
 	{yonergecikis: 0},
+	{Sprite11: 0},
+	{Sprite14: 0},
+	{Sprite4: 0},
+	{anasayfabuton: 0},
 	{IsDragging: 0},
 	{DeltaX: 0},
 	{DeltaY: 0},
@@ -81,7 +85,6 @@ self.InstanceType = {
 	Sprite3: class extends self.ISpriteInstance {},
 	BaslaTarget: class extends self.ISpriteInstance {},
 	Sprite5: class extends self.ISpriteInstance {},
-	Sprite4: class extends self.ISpriteInstance {},
 	Ses: class extends self.IInstance {},
 	Sprite6: class extends self.ISpriteInstance {},
 	Sprite7: class extends self.ISpriteInstance {},
@@ -90,6 +93,10 @@ self.InstanceType = {
 	Sprite12: class extends self.ISpriteInstance {},
 	Sprite13: class extends self.ISpriteInstance {},
 	Sprite10: class extends self.ISpriteInstance {},
-	BaslaTarget2: class extends self.ISpriteInstance {},
-	yonergecikis: class extends self.ISpriteInstance {}
+	yonergegit: class extends self.ISpriteInstance {},
+	yonergecikis: class extends self.ISpriteInstance {},
+	Sprite11: class extends self.ISpriteInstance {},
+	Sprite14: class extends self.ISpriteInstance {},
+	Sprite4: class extends self.ISpriteInstance {},
+	anasayfabuton: class extends self.ISpriteInstance {}
 }
