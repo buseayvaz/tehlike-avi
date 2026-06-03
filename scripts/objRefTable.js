@@ -6,6 +6,9 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Text,
 		C3.Plugins.Browser,
 		C3.Plugins.Audio,
+		C3.Plugins.progressbar,
+		C3.Plugins.shadowlight,
+		C3.Plugins.Particles,
 		C3.Plugins.Touch.Cnds.IsInTouch,
 		C3.Plugins.System.Cnds.Compare,
 		C3.Plugins.Touch.Exps.TouchCount,
@@ -18,6 +21,10 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Touch.Exps.X,
 		C3.Plugins.Touch.Exps.Y,
 		C3.Plugins.Audio.Acts.Play,
+		C3.Plugins.Particles.Acts.SetPosToObject,
+		C3.Plugins.Particles.Acts.SetSpeedRandomiser,
+		C3.Plugins.Particles.Acts.SetEffect,
+		C3.Plugins.Particles.Acts.SetGrowRate,
 		C3.Plugins.System.Acts.AddVar,
 		C3.Plugins.Text.Acts.SetFontSize,
 		C3.Plugins.Text.Acts.SetText,
@@ -25,7 +32,10 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Cnds.Every,
 		C3.Plugins.System.Acts.GoToLayout,
 		C3.Plugins.Touch.Cnds.IsTouchingObject,
-		C3.Plugins.System.Acts.GoToLayoutByName
+		C3.Plugins.System.Acts.GoToLayoutByName,
+		C3.Plugins.System.Cnds.OnLayoutStart,
+		C3.Plugins.Sprite.Acts.SetVisible,
+		C3.Plugins.System.Acts.Wait
 	];
 };
 self.C3_JsPropNameTable = [
@@ -56,6 +66,20 @@ self.C3_JsPropNameTable = [
 	{Sprite14: 0},
 	{Sprite4: 0},
 	{anasayfabuton: 0},
+	{Sprite15: 0},
+	{gecisekran: 0},
+	{cubuk1: 0},
+	{cubuk2: 0},
+	{cubuk3: 0},
+	{İlerlemeÇubuğu: 0},
+	{Sprite16: 0},
+	{Sprite17: 0},
+	{Sprite18: 0},
+	{Sprite19: 0},
+	{efekt: 0},
+	{GölgeIşığı: 0},
+	{isilti: 0},
+	{Partiküller: 0},
 	{IsDragging: 0},
 	{DeltaX: 0},
 	{DeltaY: 0},
@@ -70,7 +94,15 @@ self.C3_JsPropNameTable = [
 	{TouchLastX2: 0},
 	{TouchLastY2: 0},
 	{Puan2: 0},
-	{Score2: 0}
+	{Score2: 0},
+	{IsDragging3: 0},
+	{DeltaX3: 0},
+	{DeltaY3: 0},
+	{Marked3: 0},
+	{TouchLastX3: 0},
+	{TouchLastY3: 0},
+	{Puan3: 0},
+	{Score3: 0}
 ];
 
 self.InstanceType = {
@@ -98,5 +130,19 @@ self.InstanceType = {
 	Sprite11: class extends self.ISpriteInstance {},
 	Sprite14: class extends self.ISpriteInstance {},
 	Sprite4: class extends self.ISpriteInstance {},
-	anasayfabuton: class extends self.ISpriteInstance {}
+	anasayfabuton: class extends self.ISpriteInstance {},
+	Sprite15: class extends self.ISpriteInstance {},
+	gecisekran: class extends self.ISpriteInstance {},
+	cubuk1: class extends self.ISpriteInstance {},
+	cubuk2: class extends self.ISpriteInstance {},
+	cubuk3: class extends self.ISpriteInstance {},
+	İlerlemeÇubuğu: class extends self.IProgressBarInstance {},
+	Sprite16: class extends self.ISpriteInstance {},
+	Sprite17: class extends self.ISpriteInstance {},
+	Sprite18: class extends self.ISpriteInstance {},
+	Sprite19: class extends self.ISpriteInstance {},
+	efekt: class extends self.ISpriteInstance {},
+	GölgeIşığı: class extends self.IShadowLightInstance {},
+	isilti: class extends self.ISpriteInstance {},
+	Partiküller: class extends self.IParticlesInstance {}
 }
